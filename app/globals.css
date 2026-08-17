@@ -1,0 +1,372 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------
+   Palette and type lifted from the IREAD piece, so the newsroom and
+   the long-form work read as one publication.
+   --------------------------------------------------------------- */
+@theme {
+  --color-paper: #f7f5f1;   /* page */
+  --color-card: #fffefb;    /* raised surface */
+  --color-paper-3: #ece9e2; /* image placeholder */
+  --color-paper-4: #d9d4c8;
+
+  --color-ink: #141310;
+  --color-ink-2: #5d5a52;
+  --color-ink-3: #8b877d;
+  --color-ink-4: #a8a49a;
+
+  --color-line: #e5e1d8;    /* hairline */
+  --color-rule: #c9c3b6;    /* stronger rule */
+
+  --color-flag: #9b1c1c;    /* section flags, emphasis */
+  --color-accent: #1d4e77;  /* links */
+
+  --font-display: var(--font-newsreader), ui-serif, "Iowan Old Style", Georgia, serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Serif is the default voice here, not the exception. */
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: #e8e2d4;
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: 1px;
+  }
+}
+
+/* ---------------------------------------------------------------
+   Editorial primitives
+   --------------------------------------------------------------- */
+
+/* The small uppercase label. Sans, tight leading, wide tracking —
+   the one place sans-serif earns its keep. */
+.kicker {
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-flag);
+}
+
+.kicker-muted {
+  color: var(--color-ink-3);
+}
+
+.meta {
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--color-ink-3);
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: var(--color-ink);
+  text-wrap: balance;
+}
+
+.rule-top {
+  border-top: 1px solid var(--color-rule);
+}
+
+.col-rule > * + * {
+  border-left: 1px solid var(--color-line);
+}
+
+@media (max-width: 767px) {
+  .col-rule > * + * {
+    border-left: 0;
+    border-top: 1px solid var(--color-line);
+  }
+}
+
+/* ---------------------------------------------------------------
+   Article body
+   --------------------------------------------------------------- */
+.article {
+  font-family: var(--font-display);
+  font-size: 1.185rem;
+  line-height: 1.62;
+  color: var(--color-ink);
+}
+
+.article p {
+  margin-top: 1.3em;
+  max-width: 68ch;
+}
+
+.article > :first-child {
+  margin-top: 0;
+}
+
+.article a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: #b4c6d6;
+}
+
+.article a:hover {
+  text-decoration-color: var(--color-accent);
+}
+
+.article h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  color: var(--color-flag);
+  margin-top: 2.3em;
+  margin-bottom: -0.55em;
+}
+
+.article h3 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 11.5px;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-ink-3);
+  margin-top: 2.4em;
+  margin-bottom: -0.9em;
+}
+
+.article h4 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-ink-3);
+  margin-top: 2.2em;
+  margin-bottom: -0.9em;
+}
+
+.article ul,
+.article ol {
+  margin-top: 1.3em;
+  padding: 0;
+  list-style: none;
+  max-width: 62ch;
+}
+
+/* A hairline dash instead of a bullet — quieter, and it lines up with
+   the rules used everywhere else on the page. */
+.article ul > li {
+  position: relative;
+  padding: 5px 0 5px 22px;
+  color: var(--color-ink-2);
+}
+
+.article ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.82em;
+  width: 10px;
+  height: 1px;
+  background: var(--color-rule);
+}
+
+.article ol {
+  counter-reset: a;
+}
+
+.article ol > li {
+  position: relative;
+  counter-increment: a;
+  padding: 5px 0 5px 30px;
+  color: var(--color-ink-2);
+}
+
+.article ol > li::before {
+  content: counter(a);
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--color-ink-3);
+}
+
+.article li strong,
+.article li em {
+  color: var(--color-ink);
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Pull quote: a left rule, no quote marks, no italic cliché. */
+.article blockquote {
+  margin: 2em 0;
+  padding: 6px 0 6px 28px;
+  border-left: 2px solid var(--color-rule);
+}
+
+.article blockquote p {
+  margin: 0;
+  max-width: 46ch;
+  font-size: 1.42rem;
+  line-height: 1.38;
+  letter-spacing: -0.012em;
+  color: var(--color-ink);
+}
+
+.article blockquote p + p {
+  margin-top: 0.85em;
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  line-height: 1.4;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-ink-3);
+}
+
+.article img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: var(--color-paper-3);
+}
+
+.article figure {
+  margin: 2.2em 0;
+}
+
+.article figcaption,
+.article img + em {
+  display: block;
+  margin-top: 16px;
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  line-height: 1.5;
+  font-style: normal;
+  color: var(--color-ink-3);
+}
+
+.article hr {
+  border: 0;
+  border-top: 1px solid var(--color-line);
+  margin: 2.6em 0;
+}
+
+.article strong {
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.article code {
+  font-size: 0.84em;
+  background: var(--color-card);
+  border: 1px solid var(--color-line);
+  padding: 0.12em 0.36em;
+  border-radius: 3px;
+}
+
+.article pre {
+  margin-top: 1.6em;
+  background: var(--color-card);
+  border: 1px solid var(--color-line);
+  border-radius: 3px;
+  padding: 1.1rem 1.25rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.article pre code {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: inherit;
+}
+
+.article table {
+  margin-top: 1.8em;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 0.94rem;
+}
+
+.article thead th {
+  border-bottom: 1px solid var(--color-rule);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-ink-3);
+  padding: 0 0.7rem 0.6rem;
+  text-align: left;
+}
+
+.article tbody td {
+  border-bottom: 1px solid var(--color-line);
+  padding: 0.62rem 0.7rem;
+  color: var(--color-ink-2);
+}
+
+.article tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.article.dropcap > p:first-of-type::first-letter {
+  float: left;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 3.4em;
+  line-height: 0.8;
+  padding-right: 0.07em;
+  padding-top: 0.05em;
+  color: var(--color-flag);
+}
+
+/* ---------------------------------------------------------------
+   Utilities
+   --------------------------------------------------------------- */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.ph {
+  background-color: var(--color-paper-3);
+  background-image: linear-gradient(135deg, #eeebe4 0%, #dfdace 100%);
+}
