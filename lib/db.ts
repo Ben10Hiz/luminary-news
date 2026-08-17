@@ -21,16 +21,37 @@ function connectionString() {
   return url;
 }
 
-export const sql =
-  global.__lumeSql ??
-  postgres(connectionString(), {
-    ssl: connectionString().includes("localhost") ? false : "require",
-    max: 5,
-    idle_timeout: 20,
-    connect_timeout: 15,
-  });
+function client() {
+  if (!global.__lumeSql) {
+    const url = connectionString();
+    global.__lumeSql = postgres(url, {
+      ssl: url.includes("localhost") ? false : "require",
+      max: 5,
+      idle_timeout: 20,
+      connect_timeout: 15,
+    });
+  }
+  return global.__lumeSql;
+}
 
-if (process.env.NODE_ENV !== "production") global.__lumeSql = sql;
+/**
+ * Lazy client. The connection is not opened — and DATABASE_URL is not even
+ * read — until the first query actually runs.
+ *
+ * This matters at build time: `next build` imports every route module to
+ * collect page data, and the build machine has no database. Connecting at
+ * module scope would fail the build outright instead of letting each page
+ * catch the error and render its "newsroom offline" state at runtime.
+ */
+export const sql = new Proxy(function () {} as unknown as ReturnType<typeof postgres>, {
+  apply(_target, _thisArg, args: unknown[]) {
+    return (client() as unknown as (...a: unknown[]) => unknown)(...args);
+  },
+  get(_target, prop: string | symbol) {
+    const value = (client() as unknown as Record<string | symbol, unknown>)[prop];
+    return typeof value === "function" ? value.bind(client()) : value;
+  },
+}) as ReturnType<typeof postgres>;
 
 /**
  * Creates the schema on first use. Safe to call on every request — the work
