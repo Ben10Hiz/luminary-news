@@ -7,6 +7,7 @@ import { allStories, getStory } from "@/content/stories";
 import { renderBody, excerpt, readingMinutes } from "@/lib/markdown";
 import { formatDate, isoDate, absoluteUrl, site } from "@/lib/site";
 import Highlights from "@/components/Highlights";
+import StoryDock from "@/components/StoryDock";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -116,6 +117,8 @@ export default async function StoryPage({ params }: Props) {
             >
               ← Back to the front page
             </Link>
+
+            <StoryDock />
           </div>
         </article>
       </main>
