@@ -39,6 +39,7 @@ export async function POST(req: Request) {
     const res = await fetch(endpoint, {
       method: "POST",
       headers: { "Content-Type": "text/plain;charset=utf-8" },
+      redirect: "follow",
       body: JSON.stringify({
         story,
         name,
@@ -48,6 +49,14 @@ export async function POST(req: Request) {
       }),
     });
     if (!res.ok) throw new Error(`intake responded ${res.status}`);
+
+    // Apps Script answers 200 even when its own handler failed, so the body
+    // is the real receipt. Without this check a submission could be lost
+    // while the person is told it was received.
+    const receipt = await res.text();
+    if (!/"ok"\s*:\s*true/.test(receipt)) {
+      throw new Error(`intake did not confirm: ${receipt.slice(0, 200)}`);
+    }
   } catch (err) {
     console.error("[story-intake] forward failed:", err);
     return NextResponse.json({ error: "Could not deliver." }, { status: 502 });
