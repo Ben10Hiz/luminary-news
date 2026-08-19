@@ -469,3 +469,196 @@
   background-color: var(--color-paper-3);
   background-image: linear-gradient(135deg, #eeebe4 0%, #dfdace 100%);
 }
+
+/* ---------------------------------------------------------------
+   Story dock — sticky at the foot of the piece, and the intake sheet
+   --------------------------------------------------------------- */
+.dock {
+  position: sticky;
+  bottom: 14px;
+  z-index: 40;
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0 0;
+  pointer-events: none;
+}
+
+.dock-row {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid var(--color-line);
+  border-radius: 99px;
+  background: var(--color-card);
+  box-shadow: 0 10px 34px -16px rgba(0, 0, 0, 0.45);
+  pointer-events: auto;
+}
+
+.dock-btn {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 9px 18px;
+  border-radius: 99px;
+  border: 0;
+  background: var(--color-ink);
+  color: var(--color-paper);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.dock-btn:hover {
+  background: var(--color-flag);
+}
+
+.dock-btn.soon {
+  background: transparent;
+  color: var(--color-ink-3);
+  border: 1px solid var(--color-line);
+  cursor: default;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+}
+
+.dock-btn.soon:hover {
+  background: transparent;
+}
+
+.dock-btn.soon em {
+  font-style: normal;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-ink-4);
+}
+
+.sheet-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(20, 19, 16, 0.42);
+}
+
+.sheet {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  max-height: 88vh;
+  overflow-y: auto;
+  background: var(--color-card);
+  border-top: 3px solid var(--color-flag);
+  border-radius: 5px;
+  padding: 34px 34px 30px;
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.28);
+}
+
+.sheet-x {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  border: 0;
+  background: none;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--color-ink-3);
+  cursor: pointer;
+}
+
+.sheet-form textarea,
+.sheet-form input {
+  width: 100%;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--color-ink);
+  background: var(--color-paper);
+  border: 1px solid var(--color-line);
+  border-radius: 3px;
+  padding: 12px 14px;
+}
+
+.sheet-form textarea {
+  resize: vertical;
+}
+
+.sheet-form textarea:focus,
+.sheet-form input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.sheet-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.sheet-row label {
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-ink-3);
+  display: block;
+}
+
+.sheet-row input {
+  margin-top: 6px;
+}
+
+.sheet-send {
+  margin-top: 16px;
+  width: 100%;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 99px;
+  background: var(--color-ink);
+  color: var(--color-paper);
+  cursor: pointer;
+}
+
+.sheet-send:hover {
+  background: var(--color-flag);
+}
+
+.sheet-note {
+  margin-top: 12px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-ink-3);
+}
+
+.sheet-thanks h3 {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  letter-spacing: -0.02em;
+  margin: 0 0 10px;
+}
+
+.sheet-thanks p {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--color-ink-2);
+  margin: 0;
+}
+
+@media (max-width: 520px) {
+  .sheet-row {
+    grid-template-columns: 1fr;
+  }
+  .dock-row {
+    flex-direction: column;
+  }
+}
