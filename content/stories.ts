@@ -112,25 +112,57 @@ We have not found all the children who were held back, and Indiana has not said 
 
 ### Parents and families
 
-> My son is being held back despite me nor his teachers <mark class="hl">not having any real concern about his third grade reading</mark> or comprehension skills.
+> My son told me this morning his son <mark class="hl">broke down in tears in the car</mark> as they pulled up and he couldn't figure out why. He did get him calmed down but I know he is worried about him. He wasn't like that on e-learning day at my house Tuesday. He was laughing and worked hard and fast to finish all his assignments so he could have free time to play.
 >
-> Keyue Renee · Parent, South Bend · June 2026
+> Venus Cannon · Grandparent · November 2025
 
 > My son's entire 3rd grade <mark class="hl">missed their 2nd recess for an entire semester</mark> for additional Iread practice, even though the majority had already passed it in 2nd grade.
 >
 > Elizabeth Welty · Parent · August 2026
 
-> My son told me this morning his son <mark class="hl">broke down in tears in the car</mark> as they pulled up and he couldn't figure out why. He did get him calmed down but I know he is worried about him. He wasn't like that on e-learning day at my house Tuesday. He was laughing and worked hard and fast to finish all his assignments so he could have free time to play.
+> They also, at our school anyway, are forced to take summer school after 2nd grade if they don't pass the IREAD at the end of the year. If they pass at the end of 2nd grade they don't have to take it in third, <mark class="hl">but if they fail it in third they get held back</mark>.
 >
-> Venus Cannon · Grandparent · November 2025
+> Amber Curry · Parent · August 2025
 
-> He <mark class="hl">took the test three times, scoring about the same</mark> even after summer school and their literacy specialist.
+> <mark class="hl">They can be held back for not passing a test</mark>, yet when a parent wants to hold them back in kindergarten or first grade they have to jump through hoops.
 >
-> Keyue Renee · Parent, South Bend · June 2026
+> Skylar Nusbaum · Parent · August 2025
+
+> My grandson was <mark class="hl">so anxious about taking it</mark>, and was relieved to pass it.
+>
+> Tawnya Curran · Grandparent · November 2025
 
 > My youngest son's newly assigned case manager, who got her masters in special education in the past 5 years, admitted to me that she has <mark class="hl">never heard of developmental language disorder</mark> before and does not know how to help my son. She also admitted she knows very little about dyslexia. My older son's case manager <mark class="hl">does not know what dysgraphia is</mark>.
 >
 > Nicole Gardner · Parent of two sons with dyslexia and dysgraphia · November 2025
+
+> Not everyone is good at taking tests. Not every child gets enough sleep and a solid breakfast to be able to sustain through the test, and that is beyond the teacher's control. <mark class="hl">And then add the pressure that if they don't pass a test they can't move on</mark>.
+>
+> Amanda Hamilton · Parent · November 2025
+
+> <mark class="hl">If the retention part has always been there</mark>, we were never told that. So I highly doubted it was an automatic hold back. Now it seems to be enforced.
+>
+> Jeremy Knudsen · Parent · August 2025
+
+> <mark class="hl">The number of 'diagnostics' and computer testings my children do each school year is mind blowing</mark>.
+>
+> Ashley Meade Dembinski · Parent · August 2025
+
+> They allowed 2nd graders to take it last year as well as 3rd graders, to see if they could test out and not have to take it as a 3rd grader. <mark class="hl">My daughter passed it as a second grader</mark>, so she doesn't take it this year.
+>
+> Sarah Hebert · Parent · August 2025
+
+> She's not unique. There are kids whose parents die who take the test the next day. <mark class="hl">Kids are people. They're not statistics.</mark> There has to be some room.
+>
+> Rachel Burke · President, Indiana Parent Teacher Association · WFYI · 2024
+
+> My son is being held back despite me nor his teachers <mark class="hl">not having any real concern about his third grade reading</mark> or comprehension skills.
+>
+> Keyue Renee · Parent, South Bend · June 2026
+
+> He <mark class="hl">took the test three times, scoring about the same</mark> even after summer school and their literacy specialist.
+>
+> Keyue Renee · Parent, South Bend · June 2026
 
 > My daughter was one of them that was going to be held back. They tried to hold her back in second grade to get ahead of it and I declined. As soon as this law took effect I fought for her. She already had an IEP for speech and I fought to get her additional testing for learning disability, which she did qualify for one. <mark class="hl">In the end she finally passed</mark>.
 >
@@ -152,41 +184,9 @@ We have not found all the children who were held back, and Indiana has not said 
 >
 > Lauren Gilman-Swinefurth · Parent · August 2025
 
-> Not everyone is good at taking tests. Not every child gets enough sleep and a solid breakfast to be able to sustain through the test, and that is beyond the teacher's control. <mark class="hl">And then add the pressure that if they don't pass a test they can't move on</mark>.
->
-> Amanda Hamilton · Parent · November 2025
-
-> I'm about to the point of withdrawing permission for my son to take standardized tests and the school can just get over it. <mark class="hl">He wouldn't be on the honor roll with all A's and B's if he wasn't learning what he needs to be learning</mark>.
->
-> Nicole Gardner · Parent · November 2025
-
-> My grandson was <mark class="hl">so anxious about taking it</mark>, and was relieved to pass it.
->
-> Tawnya Curran · Grandparent · November 2025
-
-> They also, at our school anyway, are forced to take summer school after 2nd grade if they don't pass the IREAD at the end of the year. If they pass at the end of 2nd grade they don't have to take it in third, <mark class="hl">but if they fail it in third they get held back</mark>.
->
-> Amber Curry · Parent · August 2025
-
-> <mark class="hl">If the retention part has always been there</mark>, we were never told that. So I highly doubted it was an automatic hold back. Now it seems to be enforced.
->
-> Jeremy Knudsen · Parent · August 2025
-
-> <mark class="hl">The number of 'diagnostics' and computer testings my children do each school year is mind blowing</mark>.
->
-> Ashley Meade Dembinski · Parent · August 2025
-
 > I went to the IDOE website. It just wasn't as extensive as I had hoped. <mark class="hl">I was looking for an actual practice test but couldn't get anything like it to print</mark>.
 >
 > Venus Cannon · Grandparent · November 2025
-
-> <mark class="hl">They can be held back for not passing a test</mark>, yet when a parent wants to hold them back in kindergarten or first grade they have to jump through hoops.
->
-> Skylar Nusbaum · Parent · August 2025
-
-> They allowed 2nd graders to take it last year as well as 3rd graders, to see if they could test out and not have to take it as a 3rd grader. <mark class="hl">My daughter passed it as a second grader</mark>, so she doesn't take it this year.
->
-> Sarah Hebert · Parent · August 2025
 
 > They are also testing them in second grade to see where each kid is, <mark class="hl">and if they pass in second they don't have to take the IREAD in third</mark> — just ILEARN.
 >
@@ -196,11 +196,63 @@ We have not found all the children who were held back, and Indiana has not said 
 >
 > Tamara Mowery Gore · Teacher, replying to a grandmother in the comments · November 2025
 
-> She's not unique. There are kids whose parents die who take the test the next day. <mark class="hl">Kids are people. They're not statistics.</mark> There has to be some room.
+> I'm about to the point of withdrawing permission for my son to take standardized tests and the school can just get over it. <mark class="hl">He wouldn't be on the honor roll with all A's and B's if he wasn't learning what he needs to be learning</mark>.
 >
-> Rachel Burke · President, Indiana Parent Teacher Association · WFYI · 2024
+> Nicole Gardner · Parent · November 2025
 
 ### Teachers and school staff
+
+> <mark class="hl">We are forced to teach for the tests and it's sad</mark>.
+>
+> Amanda Ortega · Teacher · August 2025
+
+> We did after school tutoring for months, <mark class="hl">and summer school for our kids at risk of not passing</mark>. Lots of time and energy.
+>
+> Heather Severns Shelley · Educator · August 2025
+
+> That is taking away time from science, social studies, and math, not to mention time to explore choice reading, and <mark class="hl">causing kids to hate school</mark> — which will be far more detrimental in the long run.
+>
+> Malia Perry-Heimbach · Educator · August 2025
+
+> <mark class="hl">I hated it for the kids when testing became the norm</mark>. I tried to make it as fun as I could. I wasn't a good test taker before I was a teacher, so I knew how it felt.
+>
+> Penny Watterson Cooper · Teacher · August 2025
+
+> When I was in MTSS meetings about 2 years back, in anticipation of this law going into effect, many students that may have once been thought to benefit from being held back were being pushed into the next grade. It was thought that if they held someone back, <mark class="hl">then that person still failed the test</mark>, they would still be required to hold them a 2nd year.
+>
+> Esperanza Lindsey Monge · Educator · June 2026
+
+> We really only have three weeks to make a huge gain for some of our students, and a lot of that's not realistic. Some of them are pretty far off and <mark class="hl">don't have an exemption and will be retained</mark>.
+>
+> Monica Shellhamer · Third grade teacher; officer, Indianapolis Education Association · Chalkbeat · 2025
+
+> <mark class="hl">Why I refuse to go back to teaching</mark>. There is no teaching, it is all about passing tests. According to the leaders you are perfect if you can pass a test, and who cares if you are a bad test taker.
+>
+> Deb Allen · Former teacher · August 2025
+
+> <mark class="hl">There are schools out there who previously had extremely low pass rates who did whatever they could to focus on making kids pass</mark>.
+>
+> Amanda Zea · School staff · August 2025
+
+> Could it be because there were such high stakes — mandatory retention — <mark class="hl">that schools ONLY focused on IREAD and nothing else?</mark>
+>
+> Amanda Zea · School staff · August 2025
+
+> <mark class="hl">I believe the fear of retention and the implementation of the science of reading led to some of these gains</mark>.
+>
+> April Ann Marie Adams · Third grade teacher, 13 years · August 2025
+
+> Two years ago when they touted the strong increase, they never shared that they removed the timing, <mark class="hl">which was a significant barrier for many kids</mark>. This year they added an additional testing opportunity, but are again not sharing that.
+>
+> Tessa Maguire · Educator · August 2025
+
+> No spelling tests. <mark class="hl">Kids moving onto 4th grade and cannot spell beginner words</mark>. Same with math — seeing kids in 3rd and 4th grade that can't subtract multiple-digit numbers.
+>
+> Claudia Roloff · Educator · August 2025
+
+> <mark class="hl">If your kids use these programs and are moved to a lower tier</mark>, you must demand a human assessment as well.
+>
+> Reita Bourget · Retired educator and tutor · November 2025
 
 > The school I'm at, <mark class="hl">only 4 passed last year</mark>. We retested twice over the summer and got up to 10.
 >
@@ -210,77 +262,25 @@ We have not found all the children who were held back, and Indiana has not said 
 >
 > Becky Munger Crawford · Title I Coordinator · August 2025
 
-> We really only have three weeks to make a huge gain for some of our students, and a lot of that's not realistic. Some of them are pretty far off and <mark class="hl">don't have an exemption and will be retained</mark>.
->
-> Monica Shellhamer · Third grade teacher; officer, Indianapolis Education Association · Chalkbeat · 2025
-
-> <mark class="hl">We are forced to teach for the tests and it's sad</mark>.
->
-> Amanda Ortega · Teacher · August 2025
-
 > I've seen it in every school I've worked in. It isn't even about learning to read. <mark class="hl">It's about passing a test</mark>.
 >
 > Susan Ross · Teacher · August 2025
-
-> Could it be because there were such high stakes — mandatory retention — <mark class="hl">that schools ONLY focused on IREAD and nothing else?</mark>
->
-> Amanda Zea · School staff · August 2025
-
-> That is taking away time from science, social studies, and math, not to mention time to explore choice reading, and <mark class="hl">causing kids to hate school</mark> — which will be far more detrimental in the long run.
->
-> Malia Perry-Heimbach · Educator · August 2025
-
-> <mark class="hl">I believe the fear of retention and the implementation of the science of reading led to some of these gains</mark>.
->
-> April Ann Marie Adams · Third grade teacher, 13 years · August 2025
-
-> When I was in MTSS meetings about 2 years back, in anticipation of this law going into effect, many students that may have once been thought to benefit from being held back were being pushed into the next grade. It was thought that if they held someone back, <mark class="hl">then that person still failed the test</mark>, they would still be required to hold them a 2nd year.
->
-> Esperanza Lindsey Monge · Educator · June 2026
-
-> Two years ago when they touted the strong increase, they never shared that they removed the timing, <mark class="hl">which was a significant barrier for many kids</mark>. This year they added an additional testing opportunity, but are again not sharing that.
->
-> Tessa Maguire · Educator · August 2025
-
-> <mark class="hl">Why I refuse to go back to teaching</mark>. There is no teaching, it is all about passing tests. According to the leaders you are perfect if you can pass a test, and who cares if you are a bad test taker.
->
-> Deb Allen · Former teacher · August 2025
 
 > I swear some of the passages are the same as they were 10 years ago. The only difference is they had to add more, because they are now giving at least 2 more opportunities to test — 2nd grade, <mark class="hl">and you can retake it twice in the summer window</mark>.
 >
 > Cara Davis Rothrock · Third grade teacher, 11 years, two districts · August 2025
 
-> We did after school tutoring for months, <mark class="hl">and summer school for our kids at risk of not passing</mark>. Lots of time and energy.
->
-> Heather Severns Shelley · Educator · August 2025
-
 > The child is bored. Don't accept the results for his placement. <mark class="hl">Demand a human assessment after a month of regular human tutoring</mark>.
 >
 > Reita Bourget · Retired educator · November 2025
-
-> No spelling tests. <mark class="hl">Kids moving onto 4th grade and cannot spell beginner words</mark>. Same with math — seeing kids in 3rd and 4th grade that can't subtract multiple-digit numbers.
->
-> Claudia Roloff · Educator · August 2025
-
-> <mark class="hl">There are schools out there who previously had extremely low pass rates who did whatever they could to focus on making kids pass</mark>.
->
-> Amanda Zea · School staff · August 2025
 
 > Students with IEPs still have to take these tests, as well as English Language Learners that have been in country for a short amount of time. They can apply for a good cause exemption for those students, <mark class="hl">but they have DRASTICALLY reduced the number of those that are allowed</mark>.
 >
 > Allison 'Goodwin' Smiley · Educator · August 2025
 
-> <mark class="hl">I hated it for the kids when testing became the norm</mark>. I tried to make it as fun as I could. I wasn't a good test taker before I was a teacher, so I knew how it felt.
->
-> Penny Watterson Cooper · Teacher · August 2025
-
 > The law changed and good cause exemptions weren't allowed anymore. <mark class="hl">Before we could give a GCE to students with IEPs or students who are learning English</mark>.
 >
 > Erin Kathleen Hodel · Teacher · November 2025
-
-> <mark class="hl">If your kids use these programs and are moved to a lower tier</mark>, you must demand a human assessment as well.
->
-> Reita Bourget · Retired educator and tutor · November 2025
 
 > They did change it a little — it's no longer timed. <mark class="hl">For some, the time constraint would cause them not to pass</mark>.
 >
@@ -292,21 +292,81 @@ We have not found all the children who were held back, and Indiana has not said 
 
 ### Officials, researchers and others
 
-> I don't know how, for an 8 or 9-year-old, that you tell them they're not good at reading and then make them do the year all over when it's already been a struggle for them — and then what, <mark class="hl">just tell them to try harder at school?</mark>
+> It's <mark class="hl">very stressful for these 8 and 9 year olds</mark>.
 >
-> A parent of a rising third grader with dyslexia · Spoke anonymously · Mirror Indy · 2025
+> Emily Rose · Commenter · August 2025
+
+> <mark class="hl">This mandate for retention is life-changing for every one of those kids</mark>. And so we are taking it with that level of seriousness.
+>
+> Lela Simmons · Chief Learning Officer, Indianapolis Public Schools · Chalkbeat · 2025
+
+> <mark class="hl">We've known for a long time that retention is not a research-based strategy</mark>.
+>
+> Chip Pettit · Superintendent, Duneland School Corporation · Post-Tribune · 2024
+
+> <mark class="hl">This is an unfunded mandate, so no additional money came from the state to help these kids</mark>. And now we will need to spend money on an extra year of education costs before they graduate high school.
+>
+> Douglass Gaking · Commenter · November 2025
+
+> Standardized tests have their use, but they need to be their own lane, and a small one. <mark class="hl">Teaching to the test is garbage</mark>.
+>
+> Mark Andrew · Commenter · August 2025
+
+> <mark class="hl">They had more chances to fail, but that doesn't fit the district narratives</mark>.
+>
+> April Diamond · Commenter · August 2025
+
+> Nope, they just pass them. <mark class="hl">Just like they did me</mark>.
+>
+> Jennifer Will · Commenter · August 2025
+
+> They were told if they fail they'll stay in 3rd grade, so they had <mark class="hl">a little extra weight on their shoulders</mark>.
+>
+> Kristn Downing · Commenter · August 2025
+
+> <mark class="hl">How 412 kids last couple years and 3,000 kids — it's just ridiculous</mark>. Boggles the mind.
+>
+> Shayne Markcum-Brumback · Commenter · November 2025
+
+> Scare the poop out of parents, teachers and kids by retaining kids who are struggling, and then <mark class="hl">pretend this plan is a success</mark>.
+>
+> Emily Razz · Commenter · August 2025
 
 > It's just putting kids in a bad education situation for <mark class="hl">the rest of their lives</mark>.
 >
 > A parent of a rising third grader with dyslexia · Spoke anonymously · Mirror Indy · 2025
 
+> They passed a law that said kids who don't pass have to be retained, so they taught the kids how to pass the test — <mark class="hl">that's confusing on purpose</mark> — instead of actual learning.
+>
+> Megan Renee Smith · Commenter · August 2025
+
+> They haven't come up with a remediation program to get to kids before they take the test in third grade. We don't know how to connect the dots. <mark class="hl">We're stuck on stupid</mark>.
+>
+> Vernon Smith · State Representative and education professor, Indiana University Northwest · Post-Tribune · 2024
+
+> And they get to take it twice in second grade and three times in third grade. <mark class="hl">That helps the average</mark>.
+>
+> Tom Rosenbaum · Commenter · August 2025
+
 > They made it seem like it was mandatory that they pass in the second grade, when really they're testing them on things that aren't even in his grade level yet. <mark class="hl">They made it seem so scary</mark>, and didn't explain it well enough that it would be OK if he didn't pass this year.
 >
 > An Indianapolis Public Schools parent · Son did not pass in second grade · Mirror Indy · 2025
 
+> <mark class="hl">Indiana is setting itself up for an enormous class action lawsuit</mark>.
+>
+> Patricia Morita-Mullaney · Professor of Language and Literacy, Purdue; past president, INTESOL · Chalkbeat · 2024
+
+> Literally, if they didn't pass they would have to take third grade over again. <mark class="hl">Teachers only focused on the IREAD</mark>.
+>
+> Kristen Szafasz · Commenter · August 2025
+
 > <mark class="hl">Not all kids get to the same level of reading</mark>. Our concern is the lack of prevention.
 >
 > Amanda Alaniz · Superintendent, Portage Township · Post-Tribune · 2024
+
+> I don't know how, for an 8 or 9-year-old, that you tell them they're not good at reading and then make them do the year all over when it's already been a struggle for them — and then what, <mark class="hl">just tell them to try harder at school?</mark>
+>
+> A parent of a rising third grader with dyslexia · Spoke anonymously · Mirror Indy · 2025
 
 > For us, we have a large English language learning population. This is also difficult for our special education students — many of them, <mark class="hl">especially depending on what kind of early learning experience they had</mark>.
 >
@@ -320,73 +380,13 @@ We have not found all the children who were held back, and Indiana has not said 
 >
 > Dan Funston · Superintendent, Concord Community Schools · WSBT · 2025
 
-> The new law says that students should pass within two years of arriving in Indiana. So if students are in another state or another country where they speak another language, <mark class="hl">they have two years or less to obtain enough proficiency in English to pass a reading test that is at the same grade level as their peers</mark>.
->
-> Jena Kennedy · Director of English Language Learners, Concord Community Schools · WSBT · 2025
-
-> Nope, they just pass them. <mark class="hl">Just like they did me</mark>.
->
-> Jennifer Will · Commenter · August 2025
-
-> They passed a law that said kids who don't pass have to be retained, so they taught the kids how to pass the test — <mark class="hl">that's confusing on purpose</mark> — instead of actual learning.
->
-> Megan Renee Smith · Commenter · August 2025
-
-> <mark class="hl">This mandate for retention is life-changing for every one of those kids</mark>. And so we are taking it with that level of seriousness.
->
-> Lela Simmons · Chief Learning Officer, Indianapolis Public Schools · Chalkbeat · 2025
-
-> <mark class="hl">Indiana is setting itself up for an enormous class action lawsuit</mark>.
->
-> Patricia Morita-Mullaney · Professor of Language and Literacy, Purdue; past president, INTESOL · Chalkbeat · 2024
-
-> <mark class="hl">We've known for a long time that retention is not a research-based strategy</mark>.
->
-> Chip Pettit · Superintendent, Duneland School Corporation · Post-Tribune · 2024
-
-> <mark class="hl">This is an unfunded mandate, so no additional money came from the state to help these kids</mark>. And now we will need to spend money on an extra year of education costs before they graduate high school.
->
-> Douglass Gaking · Commenter · November 2025
-
-> Literally, if they didn't pass they would have to take third grade over again. <mark class="hl">Teachers only focused on the IREAD</mark>.
->
-> Kristen Szafasz · Commenter · August 2025
-
-> It's <mark class="hl">very stressful for these 8 and 9 year olds</mark>.
->
-> Emily Rose · Commenter · August 2025
-
-> They were told if they fail they'll stay in 3rd grade, so they had <mark class="hl">a little extra weight on their shoulders</mark>.
->
-> Kristn Downing · Commenter · August 2025
-
-> <mark class="hl">They had more chances to fail, but that doesn't fit the district narratives</mark>.
->
-> April Diamond · Commenter · August 2025
-
-> Standardized tests have their use, but they need to be their own lane, and a small one. <mark class="hl">Teaching to the test is garbage</mark>.
->
-> Mark Andrew · Commenter · August 2025
-
-> <mark class="hl">How 412 kids last couple years and 3,000 kids — it's just ridiculous</mark>. Boggles the mind.
->
-> Shayne Markcum-Brumback · Commenter · November 2025
-
-> They haven't come up with a remediation program to get to kids before they take the test in third grade. We don't know how to connect the dots. <mark class="hl">We're stuck on stupid</mark>.
->
-> Vernon Smith · State Representative and education professor, Indiana University Northwest · Post-Tribune · 2024
-
-> Scare the poop out of parents, teachers and kids by retaining kids who are struggling, and then <mark class="hl">pretend this plan is a success</mark>.
->
-> Emily Razz · Commenter · August 2025
-
-> And they get to take it twice in second grade and three times in third grade. <mark class="hl">That helps the average</mark>.
->
-> Tom Rosenbaum · Commenter · August 2025
-
 > It's not that they weren't taught to read — they're learning two languages. It takes more time. <mark class="hl">By the time they reach fourth and fifth grade, they're surpassing their monolingual peers</mark>.
 >
 > Donna Albrecht · Professor of ENL/ESL, Indiana University Southeast · Chalkbeat · 2024
+
+> The new law says that students should pass within two years of arriving in Indiana. So if students are in another state or another country where they speak another language, <mark class="hl">they have two years or less to obtain enough proficiency in English to pass a reading test that is at the same grade level as their peers</mark>.
+>
+> Jena Kennedy · Director of English Language Learners, Concord Community Schools · WSBT · 2025
 
 ---
 
