@@ -2,19 +2,16 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const INTAKE_EMAIL = "benhizer@gmail.com";
-
 /**
- * Sticky dock at the foot of the story: "Share my story" opens the intake
- * sheet, "Tell Braun" is flagged as coming soon.
+ * Sticky dock at the foot of the story.
  *
- * Submitting composes an email to the intake address — the same fallback the
- * original piece used, so a submission never disappears into a form that has
- * nowhere to post.
+ * "Share my story" opens a form. The person fills it in and presses the
+ * button — that is the whole interaction. The submission posts to /api/story,
+ * which forwards it for approval before anything reaches the wall.
  */
 export default function StoryDock() {
   const [open, setOpen] = useState(false);
-  const [sent, setSent] = useState(false);
+  const [state, setState] = useState<"form" | "sending" | "done" | "error">("form");
   const storyRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
@@ -23,33 +20,41 @@ export default function StoryDock() {
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") close();
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  function submit(e: React.FormEvent<HTMLFormElement>) {
+  function close() {
+    setOpen(false);
+    setTimeout(() => setState("form"), 250);
+  }
+
+  async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const form = e.currentTarget;
-    const data = new FormData(form);
+    const data = new FormData(e.currentTarget);
     const story = String(data.get("story") ?? "").trim();
-    const name = String(data.get("name") ?? "").trim();
-    const city = String(data.get("city") ?? "").trim();
+    if (!story) {
+      storyRef.current?.focus();
+      return;
+    }
 
-    const body = [
-      story || "(no story text)",
-      "",
-      `Name: ${name || "(not given)"}`,
-      `City: ${city || "(not given)"}`,
-    ].join("\n");
-
-    window.location.href =
-      `mailto:${INTAKE_EMAIL}` +
-      `?subject=${encodeURIComponent("IREAD story submission")}` +
-      `&body=${encodeURIComponent(body)}`;
-
-    setSent(true);
+    setState("sending");
+    try {
+      const res = await fetch("/api/story", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          story,
+          name: String(data.get("name") ?? "").trim(),
+          city: String(data.get("city") ?? "").trim(),
+        }),
+      });
+      setState(res.ok ? "done" : "error");
+    } catch {
+      setState("error");
+    }
   }
 
   return (
@@ -72,35 +77,23 @@ export default function StoryDock() {
           aria-modal="true"
           aria-label="Share my story"
           onClick={(e) => {
-            if (e.target === e.currentTarget) setOpen(false);
+            if (e.target === e.currentTarget) close();
           }}
         >
           <div className="sheet">
-            <button
-              type="button"
-              className="sheet-x"
-              aria-label="Close"
-              onClick={() => setOpen(false)}
-            >
+            <button type="button" className="sheet-x" aria-label="Close" onClick={close}>
               ×
             </button>
 
-            {sent ? (
+            {state === "done" ? (
               <div className="sheet-thanks">
                 <h3>Thank you.</h3>
                 <p>
-                  Your email is open — press send and it&rsquo;s gone. The lies and
-                  the covering up are no longer acceptable. We are proud to support
-                  you.
+                  The lies and the covering up are no longer acceptable. We are proud
+                  to support you. Your story will be shared publicly shortly, and you
+                  will see it here.
                 </p>
-                <button
-                  type="button"
-                  className="sheet-send"
-                  onClick={() => {
-                    setSent(false);
-                    setOpen(false);
-                  }}
-                >
+                <button type="button" className="sheet-send" onClick={close}>
                   Close
                 </button>
               </div>
@@ -112,6 +105,7 @@ export default function StoryDock() {
                   aria-label="Your experience"
                   placeholder="Your experience"
                   rows={7}
+                  required
                 />
                 <div className="sheet-row">
                   <label>
@@ -123,13 +117,20 @@ export default function StoryDock() {
                     <input name="city" type="text" autoComplete="address-level2" />
                   </label>
                 </div>
-                <button type="submit" className="sheet-send">
-                  Share my story
+
+                {state === "error" && (
+                  <p className="sheet-err" role="alert">
+                    That didn&rsquo;t go through. Please try once more.
+                  </p>
+                )}
+
+                <button
+                  type="submit"
+                  className="sheet-send"
+                  disabled={state === "sending"}
+                >
+                  {state === "sending" ? "Sending…" : "Share my story"}
                 </button>
-                <p className="sheet-note">
-                  This opens your email with the message ready. Nothing is sent
-                  until you press send.
-                </p>
               </form>
             )}
           </div>
