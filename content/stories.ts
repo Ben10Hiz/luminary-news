@@ -22,7 +22,7 @@ export const stories: Story[] = [
     kicker: "Investigation",
     author: "The Luminary Network",
     authorTitle: "",
-    publishedAt: "2026-08-17",
+    publishedAt: "2026-08-19",
     body: `## What IREAD is
 
 A 38-question multiple-choice reading test, taken on a computer. There is one line on it: **446**. Above the line a child goes to fourth grade. Below it, they do third grade again.
@@ -116,11 +116,11 @@ We have not found all the children who were held back, and Indiana has not said 
 
 > I don't know how, for an 8 or 9-year-old, that you tell them they're not good at reading and then make them do the year all over when it's already been a struggle for them — and then what, <mark class="hl">just tell them to try harder at school?</mark>
 >
-> A parent of a rising third grader with dyslexia · Spoke anonymously · 2025
+> A parent of a rising third grader with dyslexia · Spoke anonymously · Mirror Indy · 2025
 
 > It's just putting kids in a bad education situation for <mark class="hl">the rest of their lives</mark>.
 >
-> A parent of a rising third grader with dyslexia · Spoke anonymously · 2025
+> A parent of a rising third grader with dyslexia · Spoke anonymously · Mirror Indy · 2025
 
 > My son's entire 3rd grade <mark class="hl">missed their 2nd recess for an entire semester</mark> for additional Iread practice, even though the majority had already passed it in 2nd grade.
 >
@@ -160,7 +160,7 @@ We have not found all the children who were held back, and Indiana has not said 
 
 > They made it seem like it was mandatory that they pass in the second grade, when really they're testing them on things that aren't even in his grade level yet. They made it seem so scary, and didn't explain it well enough that it would be OK if he didn't pass this year.
 >
-> An Indianapolis Public Schools parent · Son did not pass in second grade · 2025
+> An Indianapolis Public Schools parent · Son did not pass in second grade · Mirror Indy · 2025
 
 > Not everyone is good at taking tests. Not every child gets enough sleep and a solid breakfast to be able to sustain through the test, and that is beyond the teacher's control. And then add the pressure that if they don't pass a test they can't move on.
 >
@@ -212,7 +212,7 @@ We have not found all the children who were held back, and Indiana has not said 
 
 > We really only have three weeks to make a huge gain for some of our students, and a lot of that's not realistic. Some of them are pretty far off and <mark class="hl">don't have an exemption and will be retained</mark>.
 >
-> Monica Shellhamer · Third grade teacher; officer, Indianapolis Education Association · 2025
+> Monica Shellhamer · Third grade teacher; officer, Indianapolis Education Association · Chalkbeat · 2025
 
 > We are forced to teach for the tests and it's sad.
 >
@@ -264,11 +264,11 @@ We have not found all the children who were held back, and Indiana has not said 
 
 > Not all kids get to the same level of reading. Our concern is the lack of prevention.
 >
-> Amanda Alaniz · Superintendent, Portage Township · 2024
+> Amanda Alaniz · Superintendent, Portage Township · Post-Tribune · 2024
 
 > For us, we have a large English language learning population. This is also difficult for our special education students — many of them, especially depending on what kind of early learning experience they had.
 >
-> Dan Funston · Superintendent, Concord Community Schools · 2025
+> Dan Funston · Superintendent, Concord Community Schools · WSBT · 2025
 
 > There are schools out there who previously had extremely low pass rates who did whatever they could to focus on making kids pass.
 >
@@ -300,15 +300,15 @@ We have not found all the children who were held back, and Indiana has not said 
 
 > It's like they just paused at kindergarten or first grade, and now they're in third grade. I'm helping them pick up on basically two years of learning.
 >
-> Grace Martin · Tutor, Vision Academy · 2024
+> Grace Martin · Tutor, Vision Academy · WFYI · 2024
 
 > We celebrate the schools that have 90% or above. That's still — at Concord, there are about 400 students in a grade — that's still 40 students.
 >
-> Dan Funston · Superintendent, Concord Community Schools · 2025
+> Dan Funston · Superintendent, Concord Community Schools · WSBT · 2025
 
 > The new law says that students should pass within two years of arriving in Indiana. So if students are in another state or another country where they speak another language, they have two years or less to obtain enough proficiency in English to pass a reading test that is at the same grade level as their peers.
 >
-> Jena Kennedy · Director of English Language Learners, Concord Community Schools · 2025
+> Jena Kennedy · Director of English Language Learners, Concord Community Schools · WSBT · 2025
 
 > What about our multilingual learners? It takes 6-7 years to become fluent in a language. Are they going to retain students whose native language isn't English in 3rd grade?
 >
@@ -320,7 +320,7 @@ We have not found all the children who were held back, and Indiana has not said 
 
 > She's not unique. There are kids whose parents die who take the test the next day. <mark class="hl">Kids are people. They're not statistics.</mark> There has to be some room.
 >
-> Rachel Burke · President, Indiana Parent Teacher Association · 2024
+> Rachel Burke · President, Indiana Parent Teacher Association · WFYI · 2024
 
 > They passed a law that said kids who don't pass have to be retained, so they taught the kids how to pass the test — <mark class="hl">that's confusing on purpose</mark> — instead of actual learning.
 >
@@ -328,15 +328,15 @@ We have not found all the children who were held back, and Indiana has not said 
 
 > This mandate for retention is life-changing for every one of those kids. And so we are taking it with that level of seriousness.
 >
-> Lela Simmons · Chief Learning Officer, Indianapolis Public Schools · 2025
+> Lela Simmons · Chief Learning Officer, Indianapolis Public Schools · Chalkbeat · 2025
 
 > Indiana is setting itself up for an enormous class action lawsuit.
 >
-> Patricia Morita-Mullaney · Professor of Language and Literacy, Purdue; past president, INTESOL · 2024
+> Patricia Morita-Mullaney · Professor of Language and Literacy, Purdue; past president, INTESOL · Chalkbeat · 2024
 
 > We've known for a long time that retention is not a research-based strategy.
 >
-> Chip Pettit · Superintendent, Duneland School Corporation · 2024
+> Chip Pettit · Superintendent, Duneland School Corporation · Post-Tribune · 2024
 
 > This is an unfunded mandate, so no additional money came from the state to help these kids. And now we will need to spend money on an extra year of education costs before they graduate high school.
 >
@@ -368,7 +368,7 @@ We have not found all the children who were held back, and Indiana has not said 
 
 > They haven't come up with a remediation program to get to kids before they take the test in third grade. We don't know how to connect the dots. We're stuck on stupid.
 >
-> Vernon Smith · State Representative and education professor, Indiana University Northwest · 2024
+> Vernon Smith · State Representative and education professor, Indiana University Northwest · Post-Tribune · 2024
 
 > Scare the poop out of parents, teachers and kids by retaining kids who are struggling, and then <mark class="hl">pretend this plan is a success</mark>.
 >
@@ -380,7 +380,7 @@ We have not found all the children who were held back, and Indiana has not said 
 
 > It's not that they weren't taught to read — they're learning two languages. It takes more time. By the time they reach fourth and fifth grade, they're surpassing their monolingual peers.
 >
-> Donna Albrecht · Professor of ENL/ESL, Indiana University Southeast · 2024
+> Donna Albrecht · Professor of ENL/ESL, Indiana University Southeast · Chalkbeat · 2024
 
 ---
 
