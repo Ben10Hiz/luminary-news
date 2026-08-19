@@ -338,6 +338,105 @@
   border-bottom: 0;
 }
 
+/* ---------------------------------------------------------------
+   Released test items — presented as the card a child actually meets:
+   the stem, then the answer choices as selectable-looking chips.
+   --------------------------------------------------------------- */
+.article .item {
+  margin: 1.9em 0;
+  background: var(--color-card);
+  border: 1px solid var(--color-line);
+  border-radius: 3px;
+  padding: 20px 22px 18px;
+}
+
+.article .item .item-label {
+  margin: 0 0 10px;
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-ink-3);
+  max-width: none;
+}
+
+.article .item .stem {
+  margin: 0 0 14px;
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--color-ink);
+  max-width: none;
+}
+
+.article .item .choices {
+  margin: 0 0 14px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  max-width: none;
+}
+
+.article .item .choices li {
+  margin: 0;
+  padding: 7px 13px;
+  font-family: var(--font-sans);
+  font-size: 0.96rem;
+  line-height: 1;
+  color: var(--color-ink-2);
+  border: 1px solid var(--color-line);
+  border-radius: 99px;
+  background: var(--color-paper);
+}
+
+.article .item .choices li::before {
+  content: none;
+}
+
+.article .item .note {
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-line);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--color-ink-2);
+  max-width: none;
+}
+
+.article .item .src {
+  display: block;
+  margin-top: 10px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--color-ink-3);
+  max-width: none;
+}
+
+/* Emotional phrase inside an account. Starts as body ink, warms to the
+   editorial red when it scrolls into view. */
+.article mark.hl {
+  background: none;
+  color: inherit;
+  transition: color 1100ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.article mark.hl.lit {
+  color: var(--color-flag);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .article mark.hl {
+    transition: none;
+  }
+}
+
 .article.dropcap > p:first-of-type::first-letter {
   float: left;
   font-family: var(--font-display);
