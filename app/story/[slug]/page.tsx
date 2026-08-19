@@ -6,6 +6,7 @@ import SiteFooter from "@/components/SiteFooter";
 import { allStories, getStory } from "@/content/stories";
 import { renderBody, excerpt, readingMinutes } from "@/lib/markdown";
 import { formatDate, isoDate, absoluteUrl, site } from "@/lib/site";
+import Highlights from "@/components/Highlights";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -102,6 +103,7 @@ export default async function StoryPage({ params }: Props) {
             className="article dropcap mx-auto mt-11 max-w-[40rem]"
             dangerouslySetInnerHTML={{ __html: html }}
           />
+          <Highlights />
 
           <div className="mx-auto mt-14 max-w-[40rem] border-t border-line pt-6">
             <p className="meta">
