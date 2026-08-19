@@ -14,7 +14,7 @@ export function renderBody(body: string): string {
       "h2", "h3", "h4", "h5", "h6", "p", "a", "ul", "ol", "li", "blockquote",
       "strong", "em", "b", "i", "u", "s", "code", "pre", "br", "hr", "img",
       "figure", "figcaption", "table", "thead", "tbody", "tr", "th", "td",
-      "sup", "sub", "span", "div", "iframe",
+      "sup", "sub", "span", "div", "iframe", "mark",
     ],
     allowedAttributes: {
       a: ["href", "title", "target", "rel"],

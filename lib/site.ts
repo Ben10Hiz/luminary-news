@@ -34,17 +34,28 @@ const SHORT_FMT = new Intl.DateTimeFormat("en-US", {
   timeZone: "America/Indianapolis",
 });
 
+/**
+ * A bare "2026-08-17" parses as UTC midnight, which formats as the 16th in
+ * Indianapolis. Anchor date-only strings at local noon so the day is stable.
+ */
+function toDate(d: Date | string): Date {
+  if (typeof d === "string" && /^\d{4}-\d{2}-\d{2}$/.test(d)) {
+    return new Date(`${d}T12:00:00`);
+  }
+  return new Date(d);
+}
+
 export function formatDate(d: Date | string | null | undefined) {
   if (!d) return "";
-  return DATE_FMT.format(new Date(d));
+  return DATE_FMT.format(toDate(d));
 }
 
 export function formatShortDate(d: Date | string | null | undefined) {
   if (!d) return "";
-  return SHORT_FMT.format(new Date(d));
+  return SHORT_FMT.format(toDate(d));
 }
 
 export function isoDate(d: Date | string | null | undefined) {
   if (!d) return undefined;
-  return new Date(d).toISOString();
+  return toDate(d).toISOString();
 }
