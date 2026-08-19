@@ -18,7 +18,7 @@ export const stories: Story[] = [
   {
     slug: "what-iread-looks-like-from-the-inside",
     title: "What IREAD looks like from the inside",
-    dek: "Is a test that has nothing to do with learning to read worth the pain it causes to children?",
+    dek: "Indiana is calling it historic progress. Progress at what? The state paid for a study of its own reading test and was told it cannot measure whether a child can read. It has known for years, has asked nothing since, and is getting ready to hand the test to another year of third graders.",
     kicker: "Investigation",
     author: "The Luminary Network",
     authorTitle: "",
