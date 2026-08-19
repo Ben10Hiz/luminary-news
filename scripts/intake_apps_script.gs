@@ -1,29 +1,3 @@
-
-/**
- * Where approval notices go. Every submission emails this address; nothing
- * appears on the wall until it is approved.
- */
-var NOTIFY_EMAIL = 'ben@luminary-tech.ai';
-
-function notifyOwner_(data) {
-  try {
-    MailApp.sendEmail({
-      to: NOTIFY_EMAIL,
-      subject: 'New IREAD story for approval',
-      body: [
-        (data.name || 'Anonymous') + (data.city ? ' — ' + data.city : ''),
-        '',
-        data.story || '',
-        '',
-        'Received: ' + (data.receivedAt || new Date().toISOString()),
-        'Source: ' + (data.source || 'news.theluminary.network')
-      ].join('\n')
-    });
-  } catch (err) {
-    console.error('notify failed: ' + err);
-  }
-}
-
 /**
  * IREAD story wall — intake endpoint
  * ----------------------------------
@@ -45,15 +19,15 @@ function notifyOwner_(data) {
  *     -> Deploy. Approve the permission prompt (it only writes to your own sheet).
  *  5. Copy the Web app URL. It looks like
  *       https://script.google.com/macros/s/AKfy..../exec
- *  6. In site/index.html find this line near the bottom:
- *       const INTAKE_URL   = '';
- *     and paste the URL between the quotes. Save and redeploy the site.
+ *  6. Send that URL over. It becomes STORY_INTAKE_URL in Vercel, which is what
+ *     news.theluminary.network posts every submission to.
  *
  * If you edit this script later you must Deploy -> Manage deployments -> edit ->
  * Version: New version, or the live endpoint keeps running the old code.
  *
- * Until INTAKE_URL is filled in, the form falls back to opening the sender's own
- * email client addressed to you, so no story is lost either way.
+ * Every submission does two things the moment it lands: a row is appended to the
+ * sheet, and notifyOwner_ emails the whole story to NOTIFY. Nothing is published
+ * automatically — the row is the approval queue.
  */
 
 var HEADERS = ['Received (ET)', 'Name', 'City', 'Story', 'Status', 'Notes'];
@@ -95,6 +69,8 @@ function doPost(e) {
       ''
     ]);
 
+    notifyOwner_(d, sheet);
+
     var row = sheet.getLastRow();
     sheet.getRange(row, 4).setWrap(true);
     sheet.getRange(row, 1, 1, HEADERS.length).setVerticalAlignment('top');
@@ -120,7 +96,7 @@ function json(obj) {
  * Put your address in NOTIFY, save, then run setUpNotifications() once from the
  * editor (Run -> setUpNotifications) and approve the prompt.
  */
-var NOTIFY = '';   // e.g. 'benhizer@gmail.com'
+var NOTIFY = 'ben@luminary-tech.ai';
 
 function notifyIfNew() {
   if (!NOTIFY) return;
@@ -146,4 +122,34 @@ function setUpNotifications() {
   PropertiesService.getScriptProperties()
     .setProperty('lastSeen',
       String(SpreadsheetApp.getActiveSpreadsheet().getSheets()[0].getLastRow()));
+}
+
+/**
+ * Emails the story the moment it lands, so a submission is seen immediately
+ * rather than on the next scheduled poll. Failure here must never block the
+ * row from being written, so it is wrapped.
+ */
+function notifyOwner_(d, sheet) {
+  if (!NOTIFY) return;
+  try {
+    MailApp.sendEmail({
+      to: NOTIFY,
+      subject: 'New IREAD story for approval'
+        + (d.name ? ' — ' + String(d.name).slice(0, 60) : ''),
+      body: [
+        (d.name || 'Anonymous') + (d.city ? ' — ' + d.city : ''),
+        '',
+        String(d.story || ''),
+        '',
+        '— — —',
+        'Received: ' + (d.receivedAt || new Date().toISOString()),
+        'Source:   ' + (d.source || 'news.theluminary.network'),
+        '',
+        'Approve or edit in the sheet:',
+        SpreadsheetApp.getActiveSpreadsheet().getUrl()
+      ].join('\n')
+    });
+  } catch (err) {
+    console.error('notifyOwner_ failed: ' + err);
+  }
 }
