@@ -14,13 +14,13 @@ export function renderBody(body: string): string {
       "h2", "h3", "h4", "h5", "h6", "p", "a", "ul", "ol", "li", "blockquote",
       "strong", "em", "b", "i", "u", "s", "code", "pre", "br", "hr", "img",
       "figure", "figcaption", "table", "thead", "tbody", "tr", "th", "td",
-      "sup", "sub", "span", "div", "iframe", "mark",
+      "sup", "sub", "span", "div", "iframe", "mark", "button",
     ],
     allowedAttributes: {
       a: ["href", "title", "target", "rel"],
       img: ["src", "alt", "title", "width", "height", "loading"],
       iframe: ["src", "title", "allow", "allowfullscreen", "width", "height"],
-      "*": ["class"],
+      "*": ["class", "data-v", "data-f", "aria-pressed", "aria-label", "role", "hidden"],
     },
     allowedIframeHostnames: [
       "www.youtube.com", "youtube.com", "player.vimeo.com",
