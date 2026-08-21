@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Masthead from "@/components/Masthead";
 import SiteFooter from "@/components/SiteFooter";
-import { allStories, getStory } from "@/content/stories";
+import { allStoryPaths, getStory } from "@/content/stories";
 import { renderBody, excerpt, readingMinutes } from "@/lib/markdown";
 import { formatDate, isoDate, absoluteUrl, site } from "@/lib/site";
 import Highlights from "@/components/Highlights";
@@ -12,7 +12,7 @@ import StoryDock from "@/components/StoryDock";
 type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
-  return allStories().map((s) => ({ slug: s.slug }));
+  return allStoryPaths().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

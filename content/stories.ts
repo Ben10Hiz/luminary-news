@@ -5,6 +5,8 @@
 
 export type Story = {
   slug: string;
+  /** Other paths that open the same story. The canonical URL stays on `slug`. */
+  aliases?: string[];
   title: string;
   dek: string;
   kicker: string;
@@ -17,9 +19,10 @@ export type Story = {
 export const stories: Story[] = [
   {
     slug: "what-iread-looks-like-from-the-inside",
+    aliases: ["inside-an-indiana-education-failure"],
     title: "What IREAD looks like from the inside",
-    dek: "Indiana is calling it historic progress. Progress at what? Add more chances to test, take the clock off, and the pass rate goes up — the state mentioned neither change. Its own paid study found the test cannot measure whether a child can read. The Department recites the number, Indiana's press prints it, and with the testing contract up this year they look ready to sign for another round.",
-    kicker: "Investigation",
+    dek: "Indiana made a test it cannot defend powerful enough to hold children back. We rebuilt IREAD-3 from the inside to expose the machinery behind one of the darkest failures of judgment, evidence and responsibility in state history.",
+    kicker: "Inside an Indiana education failure",
     author: "The Luminary Network",
     authorTitle: "",
     publishedAt: "2026-08-19",
@@ -134,5 +137,10 @@ export function allStories(): Story[] {
 }
 
 export function getStory(slug: string): Story | undefined {
-  return stories.find((s) => s.slug === slug);
+  return stories.find((s) => s.slug === slug || (s.aliases ?? []).includes(slug));
+}
+
+/** Every path a story answers on — its slug and any aliases. */
+export function allStoryPaths(): string[] {
+  return stories.flatMap((s) => [s.slug, ...(s.aliases ?? [])]);
 }
