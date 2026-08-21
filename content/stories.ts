@@ -25,7 +25,7 @@ export const stories: Story[] = [
     kicker: "Inside an Indiana education failure",
     author: "The Luminary Network",
     authorTitle: "",
-    publishedAt: "2026-08-19",
+    publishedAt: "2026-08-21",
     body: `## What IREAD is
 
 A 38-question multiple-choice reading test, taken on a computer. There is one line on it: **446**. Above the line a child goes to fourth grade. Below it, they do third grade again.
