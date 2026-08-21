@@ -797,3 +797,22 @@
   .article .opening,
   .article .wall { columns: 1; }
 }
+
+/* Height-balanced columns. CSS `columns` cannot split a card, so a tall one
+   at the foot of a column leaves a hole; the script places each card in
+   whichever column is shortest instead. Without JavaScript the plain column
+   rules above still apply. */
+.article .opening.masonry,
+.article .wall.masonry {
+  columns: auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+.article .opening.masonry { gap: 34px; }
+.article .wall.masonry { gap: 22px; }
+
+.article .masonry > .col {
+  flex: 1 1 0;
+  min-width: 0;
+}
